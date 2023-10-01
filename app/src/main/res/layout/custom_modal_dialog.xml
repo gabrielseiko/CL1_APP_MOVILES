@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/cl1_alert"
+    app:cardCornerRadius="20dp"
+    android:layout_marginHorizontal="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MENSAJE"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            >
+        </TextView>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:gravity="center"
+           >
+
+           <Button
+               android:id="@+id/btnSi"
+               android:layout_width="120dp"
+               android:layout_height="wrap_content"
+               android:layout_margin="25dp"
+               android:text="SI"
+               android:fontFamily="sans-serif-condensed-light"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:background="@color/cl1_green"
+               >
+           </Button>
+           <Button
+               android:id="@+id/btnNo"
+               android:layout_width="120dp"
+               android:layout_height="wrap_content"
+               android:layout_margin="25dp"
+               android:text="NO"
+               android:fontFamily="sans-serif-condensed-light"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:background="@color/cl1_red"
+               >
+           </Button>
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
